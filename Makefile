@@ -1,12 +1,17 @@
-CFLAGS = -Wall
+CFLAGS = -Wall -std=c++11 -g
 CC = g++ 
-all:
-all: checkdir prover.o verifier.o inner_product_arg.o group.o main.o num_theory.o vector_util.o
+all: check_build_dir prover.o verifier.o inner_product_arg.o group.o main.o num_theory.o vector_util.o
 	$(CC) $(CFLAGS) -o build/demo build/num_theory.o build/vector_util.o build/main.o build/prover.o build/inner_product_arg.o build/group.o
-checkdir:
+test: check_test_dir
+check_build_dir:
 	if [ ! -d "./build" ]; \
 		then mkdir build && \
 		echo "Created build dir"; \
+		fi
+check_test_dir:
+	if [ ! -d "./tests" ]; \
+		then mkdir tests && \
+		echo "Created test build dir"; \
 		fi
 prover.o:
 	$(CC) $(CFLAGS) -c -o build/prover.o src/prover.cpp

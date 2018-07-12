@@ -5,15 +5,16 @@
 using std::vector;
 #include <cmath>
 
-bool is_prime(long int n);
-long get_prime(long q);
-int large_mod(int a, int b, int p);
-vector <int> haderson_product(vector <int> a, vector <int> b);
-long inner_product(vector <int> a, vector <int> b);
-long inner_product(vector <int> a, vector <int> b, int order);
-int vector_power(vector <int> a, vector <int> b);
-vector <int> vector_polynomial_product(vector <int> a, vector <int> b);
-int modInverse(int a, int m);
-int neg_power_mod(int a, int y, int i, int order);
+bool is_prime(long int );
+long get_prime(long );
+int large_mod(int , int , int );
+vector <int> haderson_product(vector <int> , vector <int> );
+long inner_product(vector <int> , vector <int> );
+long inner_product(vector <int> , vector <int> , int);
+int vector_power(vector <int> , vector <int> );
+int vector_power(vector <int> , vector <int> , int );
+vector <int> vector_polynomial_product(vector <int> , vector <int> );
+int modInverse(int , int );
+int neg_power_mod(int , int , int , int );
 
 #endif

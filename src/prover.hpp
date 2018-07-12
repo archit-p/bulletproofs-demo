@@ -10,14 +10,16 @@ class Prover{
         vector <int> get_complement_vector(vector <int>);
         vector <int> get_prime_group();
         int commit_to(int , vector <int> , vector <int> );
-        long hash(vector <int>, vector <int>, vector <int>, vector <int>, int , int );
-        bool set_t_coefficients(int , int , int);
-        long calc_t_cap(int , int , int );
+        bool set_t_coefficients();
+        long calc_t_cap();
         bool t_commitment();
-        int calc_tau_x(int , int );
+        int calc_tau_x();
+        void set_x(int );
+        void set_y(int );
+        void set_z(int );
     private:
-        int n, p;
-        long v, a, s;
+        int n, p, v;
+        int x, y, z;
         vector <int> al;
         vector <int> ar;
         vector <int> sl;
@@ -31,9 +33,9 @@ class Prover{
         int t_commit[2];
         int tau[2];
         int tau_x;
-        vector <int> get_gen_vector(int len);
-        vector <int> calc_l(int , int );
-        vector <int> calc_r(int , int , int );
+        vector <int> get_gen_vector(vector <int> gens, int len);
+        vector <int> calc_l();
+        vector <int> calc_r();
 };
 
 #endif

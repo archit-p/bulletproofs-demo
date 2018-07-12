@@ -96,6 +96,24 @@ int vector_power(vector <int> a, vector <int> b)
     return power;
 }
 
+int vector_power(vector <int> a, vector <int> b, int order)
+{
+    vector <int> :: iterator i;
+    vector <int> :: iterator j;
+
+    int power = 1;
+    int vali;
+    int valj;
+
+    //assert (a.size() == b.size());
+    for(i = a.begin(), j = b.begin(); i != a.end(), j != b.end(); i++, j++) {
+        vali = *i;
+        valj = *j;
+        power *= (int(pow(vali, valj))%order);
+    }
+    return power;
+}
+
 vector <int> vector_polynomial_product(vector <int> a, vector <int> b)
 {
     vector <int> g_1;

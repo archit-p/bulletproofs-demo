@@ -104,11 +104,11 @@ vector <int> vector_sum(vector <int> a, vector <int> b, int order)
     return c;
 }
 
-vector <int> random_vector(int len)
+vector <int> random_vector(int len, int order)
 {
     vector <int> ret;
     for(int i = 0; i < len; i++)
-        ret.push_back(rand()%2);
+        ret.push_back(rand()%order);
     return ret;
 }
 

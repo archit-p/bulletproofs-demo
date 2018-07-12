@@ -24,7 +24,7 @@ vector <int> k_product_vector(vector <int> , int k, int );
 vector <int> vector_diff(vector <int> , vector <int> );
 vector <int> vector_sum(vector <int> , vector <int> );
 vector <int> vector_sum(vector <int> , vector <int> , int );
-vector <int> random_vector(int );
+vector <int> random_vector(int ,int );
 void pad_vector(vector <int> &, int );
 
 #endif
