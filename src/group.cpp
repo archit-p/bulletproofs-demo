@@ -49,6 +49,5 @@ vector <int> Group::get_group()
 //helper function returns a generator for the group
 int Group::get_gen()
 {
-    std::srand ( unsigned ( std::time(0) ) );
     return Group::generators[rand()%Group::generators.size()];
 }
