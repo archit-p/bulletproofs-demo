@@ -15,17 +15,16 @@ using std::vector;
 #include <algorithm>
 using std::reverse;
 
-void get_half(vector <int>& a, vector <int>& b, vector <int>& c);
-template <typename T>
-void pprint_vector(vector <T> a);
-vector <int> get_k_vector(int k, int n);
-vector <int> get_bit_vector(long v);
-vector <int> k_product_vector(vector <int> vec, int k);
-vector <int> k_product_vector(vector <int> vec, int k, int order);
-vector <int> vector_diff(vector <int> a, vector <int> b);
-vector <int> vector_sum(vector <int> a, vector <int> b);
-vector <int> vector_sum(vector <int> a, vector <int> b, int order);
-vector <int> random_vector(int len);
-void pad_vector(vector <int> &vec, int len);
+void get_half(vector <int>& , vector <int>& , vector <int>& );
+void pprint_vector(vector <int> );
+vector <int> get_k_vector(int , int );
+vector <int> get_bit_vector(long );
+vector <int> k_product_vector(vector <int> , int );
+vector <int> k_product_vector(vector <int> , int k, int );
+vector <int> vector_diff(vector <int> , vector <int> );
+vector <int> vector_sum(vector <int> , vector <int> );
+vector <int> vector_sum(vector <int> , vector <int> , int );
+vector <int> random_vector(int );
+void pad_vector(vector <int> &, int );
 
 #endif

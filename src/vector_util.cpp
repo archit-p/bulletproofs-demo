@@ -32,10 +32,9 @@ void get_half(vector <int>& a, vector <int>& b, vector <int>& c)
 }
 
 //function to pretty print a vector
-template <typename T>
-void pprint_vector(vector <T> a)
+void pprint_vector(vector <int> a)
 {
-    typename vector <T> :: iterator i;
+    typename vector <int> :: iterator i;
     cout << "----------" << endl;
     for(i = a.begin(); i != a.end(); i++)
         cout << *i << " ";
