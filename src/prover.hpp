@@ -6,7 +6,7 @@ using std::vector;
 
 class Prover{
     public:
-        Prover(int , int , int , vector <int>);
+        Prover(int , int , vector <int>);
         vector <int> get_complement_vector(vector <int>);
         vector <int> get_prime_group();
         int commit_to(int , vector <int> , vector <int> );

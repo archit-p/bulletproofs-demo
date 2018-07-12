@@ -8,10 +8,9 @@ using std::vector;
 #include "num_theory.hpp"
 #include "prover.hpp"
 
-Prover::Prover(int val, int size, int prime, vector <int> gens)
+Prover::Prover(int val, int prime, vector <int> gens)
 {
     v = val;
-    n = size;
     p = prime;
     al = get_bit_vector(v);
     ar = get_complement_vector(al);
