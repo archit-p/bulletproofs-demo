@@ -17,6 +17,7 @@ class Prover{
         void set_x(int );
         void set_y(int );
         void set_z(int );
+	int get_mu();
     private:
         int n, p, v;
         int x, y, z;

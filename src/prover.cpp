@@ -129,3 +129,8 @@ bool Prover::set_t_coefficients()
     t[1] = inner_product(diff, haderson_y) + inner_product(sl, prod);
     t[2] = inner_product(sl, sr);
 }
+
+int Prover::get_mu()
+{
+    return (alpha + row*x);
+}
